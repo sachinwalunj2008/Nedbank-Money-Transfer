@@ -1,0 +1,12 @@
+<div fxLayout="row" fxLayoutAlign="center">
+    <mat-toolbar color="primary">
+        <div fxLayout="row" fxLayoutAlign="space-around">
+            <img src="../assets/logo.jpg" alt="NedBank" class="center">
+        </div>
+    </mat-toolbar>
+</div>
+<mat-divider color="warn"></mat-divider>
+
+<div fxLayout="row" fxLayoutAlign="center" [ngStyle]="{'background-image': 'url(' + '../assets/background.jpg' + ')'}">
+    <router-outlet></router-outlet>
+</div>

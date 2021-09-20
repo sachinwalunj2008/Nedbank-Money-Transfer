@@ -1,0 +1,20 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+
+
+$NedBank-primary: mat-palette($mat-grey, 50, 50, 900);
+$NedBank-accent: mat-palette($mat-cyan, 800, 200, 900);
+$NedBank-warn: mat-palette($mat-orange, 700, 200, 900);
+$NedBank-theme: mat-light-theme($NedBank-primary, $NedBank-accent, $NedBank-warn);
+
+@include angular-material-theme($NedBank-theme);
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
